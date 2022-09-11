@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti.WebApi", "Smarti.WebApi\Smarti.WebApi.csproj", "{7D0CDA96-3505-4029-91EE-5EC3B2FA1EDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smarti.WebApi", "Smarti.WebApi\Smarti.WebApi.csproj", "{7D0CDA96-3505-4029-91EE-5EC3B2FA1EDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{F46B4842-7152-4F1F-96A7-C4791BE13F9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti.Common.Services", "Common\Smarti.Common.Services\Smarti.Common.Services.csproj", "{A8D00F4F-C2B4-4D27-8A2F-634CAEBCB3DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti.Common.Infrastructure", "Common\Smarti.Common.Infrastructure\Smarti.Common.Infrastructure.csproj", "{3E373FD8-AAC5-4225-A4A4-FBE24424A170}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,21 @@ Global
 		{7D0CDA96-3505-4029-91EE-5EC3B2FA1EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D0CDA96-3505-4029-91EE-5EC3B2FA1EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D0CDA96-3505-4029-91EE-5EC3B2FA1EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8D00F4F-C2B4-4D27-8A2F-634CAEBCB3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D00F4F-C2B4-4D27-8A2F-634CAEBCB3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D00F4F-C2B4-4D27-8A2F-634CAEBCB3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D00F4F-C2B4-4D27-8A2F-634CAEBCB3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E373FD8-AAC5-4225-A4A4-FBE24424A170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E373FD8-AAC5-4225-A4A4-FBE24424A170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E373FD8-AAC5-4225-A4A4-FBE24424A170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E373FD8-AAC5-4225-A4A4-FBE24424A170}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8D00F4F-C2B4-4D27-8A2F-634CAEBCB3DC} = {F46B4842-7152-4F1F-96A7-C4791BE13F9A}
+		{3E373FD8-AAC5-4225-A4A4-FBE24424A170} = {F46B4842-7152-4F1F-96A7-C4791BE13F9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FF6A990-3AF5-4668-942B-F7E3AA4BF14A}
