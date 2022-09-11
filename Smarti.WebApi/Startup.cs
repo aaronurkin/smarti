@@ -1,9 +1,13 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Smarti.Common.Infrastructure;
+using Smarti.Common.Services;
 
 namespace Smarti.WebApi
 {
@@ -29,6 +33,14 @@ namespace Smarti.WebApi
                     Description = "Smarti ASP.NET Core Web API"
                 });
             });
+            services.AddAutofac();
+        }
+
+        public void ConfigureContainer(ContainerBuilder container)
+        {
+            container
+                .RegisterType<AutofacServiceResolver>()
+                .As<IServiceResolver>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
