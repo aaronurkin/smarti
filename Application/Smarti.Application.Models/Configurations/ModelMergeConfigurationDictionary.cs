@@ -16,5 +16,13 @@ namespace Smarti.Application.Models.Configurations
             : base(StringComparer.OrdinalIgnoreCase)
         {
         }
+
+        /// <summary>
+        /// Initializes a case insensitive dictionary and fills it with values
+        /// </summary>
+        public ModelMergeConfigurationDictionary(IDictionary<string, DataSource> values)
+            : base(values, StringComparer.OrdinalIgnoreCase)
+        {
+        }
     }
 }
