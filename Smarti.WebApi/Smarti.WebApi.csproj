@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Application\Smarti.Application.Infrastructure\Smarti.Application.Infrastructure.csproj" />
     <ProjectReference Include="..\Common\Smarti.Common.Infrastructure\Smarti.Common.Infrastructure.csproj" />
     <ProjectReference Include="..\Presentation\Smarti.Presentation.Infrastructure\Smarti.Presentation.Infrastructure.csproj" />
   </ItemGroup>
