@@ -40,7 +40,11 @@ namespace Smarti.WebApi
         {
             container
                 .RegisterType<AutofacServiceResolver>()
-                .As<IServiceResolver>();
+                .As<IServiceResolver>()
+                .InstancePerLifetimeScope();
+
+            container
+                .RegisterModule(new AutofacMergePersonModule(Configuration));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
