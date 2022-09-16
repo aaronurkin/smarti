@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Smarti.Application.Models\Smarti.Application.Models.csproj" />
     <ProjectReference Include="..\Smarti.Application.Services\Smarti.Application.Services.csproj" />
   </ItemGroup>
