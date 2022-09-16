@@ -15,15 +15,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9DD87487
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{A0F98FE2-2102-4CDD-B3F7-4A988007E8F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti.Application.Services", "Application\Smarti.Application.Services\Smarti.Application.Services.csproj", "{A7A226F8-6EA1-4735-A4AB-4C4F709E9168}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smarti.Application.Services", "Application\Smarti.Application.Services\Smarti.Application.Services.csproj", "{A7A226F8-6EA1-4735-A4AB-4C4F709E9168}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti.Application.Models", "Application\Smarti.Application.Models\Smarti.Application.Models.csproj", "{DC75615B-2521-42A6-ABD3-7721D8269CC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smarti.Application.Models", "Application\Smarti.Application.Models\Smarti.Application.Models.csproj", "{DC75615B-2521-42A6-ABD3-7721D8269CC8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{09276BB9-DB6A-486C-80FA-6E25979F48D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti.Application.Infrastructure", "Application\Smarti.Application.Infrastructure\Smarti.Application.Infrastructure.csproj", "{DB23CAD6-DA8F-4825-9F23-18E34A58B22E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smarti.Application.Infrastructure", "Application\Smarti.Application.Infrastructure\Smarti.Application.Infrastructure.csproj", "{DB23CAD6-DA8F-4825-9F23-18E34A58B22E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti.Application.Infrastructure.Tests", "Tests\Application\Smarti.Application.Infrastructure.Tests\Smarti.Application.Infrastructure.Tests.csproj", "{23C5680E-05A6-43A9-AF3E-8063ACB7FA22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smarti.Application.Infrastructure.Tests", "Tests\Application\Smarti.Application.Infrastructure.Tests\Smarti.Application.Infrastructure.Tests.csproj", "{23C5680E-05A6-43A9-AF3E-8063ACB7FA22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{00E1466A-862B-4C05-8202-AA5E618B9248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti.Presentation.Services", "Presentation\Smarti.Presentation.Services\Smarti.Presentation.Services.csproj", "{4D064151-0F88-44EC-8C65-149AF2163B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti.Presentation.Models", "Presentation\Smarti.Presentation.Models\Smarti.Presentation.Models.csproj", "{D3BC011C-2C9E-4588-BE11-4426BBC241D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smarti.Presentation.Infrastructure", "Presentation\Smarti.Presentation.Infrastructure\Smarti.Presentation.Infrastructure.csproj", "{9C18E91D-3257-46B5-B410-14003608AD92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +67,18 @@ Global
 		{23C5680E-05A6-43A9-AF3E-8063ACB7FA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23C5680E-05A6-43A9-AF3E-8063ACB7FA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23C5680E-05A6-43A9-AF3E-8063ACB7FA22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D064151-0F88-44EC-8C65-149AF2163B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D064151-0F88-44EC-8C65-149AF2163B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D064151-0F88-44EC-8C65-149AF2163B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D064151-0F88-44EC-8C65-149AF2163B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3BC011C-2C9E-4588-BE11-4426BBC241D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3BC011C-2C9E-4588-BE11-4426BBC241D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3BC011C-2C9E-4588-BE11-4426BBC241D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3BC011C-2C9E-4588-BE11-4426BBC241D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C18E91D-3257-46B5-B410-14003608AD92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C18E91D-3257-46B5-B410-14003608AD92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C18E91D-3257-46B5-B410-14003608AD92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C18E91D-3257-46B5-B410-14003608AD92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +91,9 @@ Global
 		{09276BB9-DB6A-486C-80FA-6E25979F48D0} = {9DD87487-E218-47C9-97D8-6EC1BB854E03}
 		{DB23CAD6-DA8F-4825-9F23-18E34A58B22E} = {A0F98FE2-2102-4CDD-B3F7-4A988007E8F4}
 		{23C5680E-05A6-43A9-AF3E-8063ACB7FA22} = {09276BB9-DB6A-486C-80FA-6E25979F48D0}
+		{4D064151-0F88-44EC-8C65-149AF2163B1F} = {00E1466A-862B-4C05-8202-AA5E618B9248}
+		{D3BC011C-2C9E-4588-BE11-4426BBC241D0} = {00E1466A-862B-4C05-8202-AA5E618B9248}
+		{9C18E91D-3257-46B5-B410-14003608AD92} = {00E1466A-862B-4C05-8202-AA5E618B9248}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1FF6A990-3AF5-4668-942B-F7E3AA4BF14A}
