@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Smarti.Application.Models\Smarti.Application.Models.csproj" />
+    <ProjectReference Include="..\..\Application\Smarti.Application.Services\Smarti.Application.Services.csproj" />
+    <ProjectReference Include="..\..\Common\Smarti.Common.Services\Smarti.Common.Services.csproj" />
+    <ProjectReference Include="..\Smarti.Presentation.Services\Smarti.Presentation.Services.csproj" />
+  </ItemGroup>
+
+</Project>
